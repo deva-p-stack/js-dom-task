@@ -2,82 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-      <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Active State Navigator</title>
-    <script type="module" crossorigin src="/js-dom-task/assets/index-CONKsd8W.js"></script>
-    <link rel="stylesheet" crossorigin href="/js-dom-task/assets/index-CcGLKqYO.css">
+    <title>Dynamic User Manager</title>
+    <script type="module" crossorigin src="/js-dom-task/assets/index-BS-O3P2g.js"></script>
+    <link rel="stylesheet" crossorigin href="/js-dom-task/assets/index-D-OOYOCV.css">
   </head>
   <body>
-
-    <header class="sticky top-0">
-      <input type="checkbox" id="Toggle" class="hidden peer" /> 
-      <nav
-        class="flex items-center justify-between p-4 text-dark-200  bg-[rgba(33,34,32,0.2)]">
-        <!-- logo -->
-        <div class="font-bold uppercase sm:ml-20 text">Deva</div>
-
-         
-          <label for="Toggle" class="cursor-pointer md:hidden"> 
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><!-- Icon from Gitlab SVGs by GitLab B.V. - https://gitlab.com/gitlab-org/gitlab-svgs/-/blob/main/LICENSE --><path fill="currentColor" fill-rule="evenodd" d="M0 3.75A.75.75 0 0 1 .75 3h14.5a.75.75 0 0 1 0 1.5H.75A.75.75 0 0 1 0 3.75M0 8a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H.75A.75.75 0 0 1 0 8m.75 3.5a.75.75 0 0 0 0 1.5h14.5a.75.75 0 0 0 0-1.5z" clip-rule="evenodd"/></svg>
-          </label>
-          
-         
-        <!-- nav link and nav items -->
-        <ul class="hidden gap-6 mr-20 md:flex text-md">
-          <li>
-            <a href="#home"  class=" nav-link  text-dark-200 no-underline transition-colors duration-300 hover:text-[#5fe280]"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="#about" 
-              class="nav-link text-dark-200 no-underline transition-colors duration-300 hover:text-[#5fe280]"
-              >About</a
-            >
-          </li>
-          <li>
-            <a
-              href="#skills" 
-              class=" nav-link text-dark-200 no-underline transition-colors duration-300 hover:text-[#5fe280]"
-              >Skills</a
-            >
-          </li>
-          <li>
-            <a
-              href="#project" 
-              class=" nav-link text-dark-200 no-underline transition-colors duration-300 hover:text-[#5fe280]"
-              >Projects</a
-            >
-          </li>
-        </ul>
-      
-      </nav>
-  <!-- mobile view -->
-  <div class="flex flex-wrap hidden bg-gray-600 peer-checked:block md:hidden">
-  <ul class="flex flex-col w-full gap-4 p-4 text-center text-md">
-    <li><a href="#home" class=" nav-link text-gray-200 hover:text-stone-800">Home</a></li>
-    <li><a href="#about"  class= " nav-link text-gray-200 hover:text-stone-800">About</a></li>
-    <li><a href="#skill"  class="nav-link text-gray-200 hover:text-stone-800">Skills</a></li>
-    <li><a href="#project"  class="nav-link text-gray-200 hover:text-stone-800">Projects</a></li>
-  </ul>
-</div>
-    </header>
-
-
     
+    <section class="w-full min-h-screen bg-teal-400 flex  justify-center items-center" id="container">
+    <div class="flex flex-col p-3 bg-[#e5f7f3] rounded-lg gap-5">
+        <div class="rounded-lg  ">
+          <input type="text" id="name" class="name input border-none   outline-none" placeholder="enter your name  ">
+        </div>
+        <div class="rounded-lg ">
+          <input type="text" id="job" class="job  border-none input  outline-none " placeholder=" enter your job role " >
+        </div>
+        <div class="flex justify-center items-center">
+          <button id="btn" class=" px-3 py-2  bg-emerald-300 rounded-lg hover:cursor-pointer"> add user </button>
+        </div>
+      </div>
+    
+    </section>
+      
 
 
 
-    <style>
- 
 
-.nav-link.active {
-  color: white;
-  background-color: green;
-}
+<style>
+.input {
+    width: 100%;
+    border-bottom: 2px solid #9FEAE1;     
+    padding: 2px 0;
+    transition: border-color 0.3s;
+  }
 
-    </style>
+  .input:focus {
+   border-bottom: 2px solid  #00D5BE;
+  }
+
+</style>
+
+
   </body>
 </html>
